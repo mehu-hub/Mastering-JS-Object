@@ -6,13 +6,13 @@ const bottle = {
 };
 
 const keys = Object.keys(bottle);
-console.log(keys) // get keys
+// console.log(keys) // get keys
 
 const values = Object.values(bottle);
-console.log(values) // get values
+// console.log(values) // get values
 
 const pair = Object.entries(bottle);
-console.log(pair)
+// console.log(pair)
 
 //---------------------------------  
 
@@ -22,3 +22,15 @@ const twoDimention = [
     ['isClean', true],
     ['capacity', '5ltr']
 ]
+
+//----------------------------------
+
+console.log(bottle);
+Object.seal(bottle);
+Object.freeze(bottle);
+
+delete bottle.isClean;
+bottle.price = 10000;
+bottle.height = 12;
+
+console.log(bottle);
