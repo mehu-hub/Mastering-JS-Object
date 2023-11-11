@@ -26,7 +26,7 @@ const reExam = student.improveExam('Geometry')
 // console.log(reExam)
 
 const remining = student.treatDey(800, 50);
-console.log(remining)
+// console.log(remining)
 
 const dolaReming = student.treatDey(500, 100);
-console.log(dolaReming)
+// console.log(dolaReming)
